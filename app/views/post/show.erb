@@ -1,0 +1,14 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.text %></p>
+
+<div class="post_buttons">
+  <% if current_user.id==@post.user_id %>
+    <form action="/post/<%= @post.id %>/edit" method="GET">
+      <input type="submit" value="Edit">
+    </form>
+    <form action="/post/<%= @post.id %>" class="delete_form"method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Delete">
+    </form>
+  <% end %>
+</div>

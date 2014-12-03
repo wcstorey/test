@@ -1,0 +1,33 @@
+<div>
+<ol>
+<% @posts.each do |post| %>
+  <%= erb :'/post/single_list', locals: {post: post} %>
+<% end %>
+</ol>
+</div>
+
+<div>
+
+<!-- New Post -->
+<!--   <a href="/post/new">Make New Post</a> -->
+<div class="new_post_container">
+  <div class="new_post_main">
+
+    <div id="new_form">
+      <form action="/post/new" method="POST">
+        Title:<br>
+        <input name="post[title]" type="text"><br>
+        Text:<br>
+        <textarea name="post[text]"></textarea><br>
+        <input type="submit" value="Submit your post.">
+      </form>
+    </div>
+
+    <input id="new_post_button" type="button" value="Make New Post">
+  </div>
+</div>
+
+
+<div>
+  <a href="/post/user/:id">View User's Posts</a>
+</div>

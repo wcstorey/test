@@ -1,0 +1,11 @@
+<div class="posts_list">
+  <li>
+  <a href="/post/<%= post.id %>" style="display:inline-block"><%= post.title %></a>
+  <% if current_user.id==post.user_id %>
+  <form action="/post/<%= post.id %>" class="delete_form" method="POST" style="display:inline-block">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete">
+  </form>
+  <% end%>
+</li>
+</div>
