@@ -11,18 +11,26 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" href="/css/new_form.css">
   <!-- Load Vollkorn font -->
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400italic,900' rel='stylesheet' type='text/css'>
   <!-- <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400' rel='stylesheet' type='text/css'> -->
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/ui-darkness/jquery-ui.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <script src="/js/application.js"></script>
+  <script src="/js/clock.js"></script>
 
   <title></title>
 </head>
 <body>
 <div id="content">
   <header>
+    <div id="clock">
+    </div>
     <a href="/"><img src="http://www.brandcrowd.com/gallery/brands/thumbs/thumb13993010111222.jpg" class="logo"></a>
     <div id="login-toolbar">
       <% if current_user %>
