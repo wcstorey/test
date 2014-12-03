@@ -66,3 +66,7 @@ code {
     margin-left: -1em;
     overflow: auto;
 }
+
+/*.error_display {
+    background-color: yellow;
+    border: 1px solid black; padding: 0.3em;}*/

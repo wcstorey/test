@@ -36,10 +36,9 @@ post '/post/new' do
   post.user_id=current_user.id
 
   if post.save
-    # post.create_revision(params[:revision][:content], current_user)
     redirect("/post/#{post.id}")
   else
-    session[:error] = "Incorrect entry"
+    set_error("Incorrect entry") #not really implementing error handling in posts right now, but leaving this in, nonetheless.
     redirect("/post/new")
   end
 end
@@ -69,7 +68,7 @@ put '/post/:id' do |id|
   if post.update(params[:post])
     redirect("/post/#{post.id}")
   else
-    session[:error] = "Incorrect entry"
+    set_error("Incorrect entry")
     redirect("/post/#{post.id}/edit")
   end
 end

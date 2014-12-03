@@ -23,6 +23,8 @@
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <script src="/js/application.js"></script>
   <script src="/js/clock.js"></script>
+  <script src="/js/piano/mousetrap.min.js"></script>
+  <script src="/js/piano/piano.js"></script>
 
   <title></title>
 </head>
@@ -31,7 +33,7 @@
   <header>
     <div id="clock">
     </div>
-    <a href="/"><img src="http://www.brandcrowd.com/gallery/brands/thumbs/thumb13993010111222.jpg" class="logo"></a>
+    <a href="/"><img src="http://www.brandcrowd.com/gallery/brands/thumbs/thumb13993010111222.jpg" class="logo">Click the Raccoon Logo to Go Back to the Main Page/Listing of All Posts</a>
     <div id="login-toolbar">
       <% if current_user %>
         <a href="/logout">Logout</a>
@@ -40,6 +42,7 @@
         <a href='/signup'>Signup</a>
       <% end %>
   </header>
+  <hr>
   <%= yield %>
 </div>
 </body>

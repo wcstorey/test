@@ -9,7 +9,7 @@ post '/login' do
     session[:user_id] = user.id
     redirect("/")
   else
-    session[:error]="Username not found or password incorrect."
+    set_error("Username not found or password incorrect.")
     redirect("/login")
   end
 end
@@ -24,7 +24,7 @@ post '/signup' do
     session[:user_id] = user.id
     redirect('/')
   else
-    session[:error] = "Improper login"
+    session[:error] = user.errors.messages
     redirect ('/signup')
   end
 end
