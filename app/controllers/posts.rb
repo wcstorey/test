@@ -1,7 +1,15 @@
+# extra security to doubly-ensure cannot just access post info from url
+before '/post/*' do
+  redirect("/login") if current_user == nil
+end
+
+# Post Routes
+
 get '/' do
   if current_user
         redirect ('/post/all')
   else
+        session[:user_id]=nil
         redirect ('/login')
   end
 end
