@@ -1,0 +1,6 @@
+<h4>ERRORS</h4>
+  <ol>
+    <% errors.each do |attr, error_msg| %>
+      <li><%= attr %>: <%= error_msg.join(", ") %></li>
+    <% end %>
+</ol>

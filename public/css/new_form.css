@@ -1,0 +1,77 @@
+/*received some assistance from the internet with this*/
+@import "http://fonts.googleapis.com/css?family=Droid+Serif";
+
+#new_post_button {
+border:1px solid #0c799e;
+width:auto;
+/*padding:10px;*/
+font-size:16px;
+font-weight:700;
+color:black; /*#fff;*/
+border-radius:3px;
+background:linear-gradient(to bottom,#59d0f8 5%,#49c0e8 100%);
+cursor:pointer
+}
+#new_post_button:hover {
+background:linear-gradient(to bottom,#49c0e8 5%,#59d0f8 100%)
+}
+/*input[type=text] {
+margin-top:5px;
+margin-bottom:20px;
+width:96%;
+border-radius:5px;
+border:0;
+padding:5px 0;
+color:black;
+}
+textarea {
+margin-top:5px;
+margin-bottom:20px;
+width:96%;
+border-radius:5px;
+border:0;
+padding:5px 0;
+color:black;
+}*/
+
+#title,#text {
+padding-left:10px
+}
+/*input[type=submit] {
+width:1em%;
+border:1px solid #59b4d4;
+background:#ffffff;
+color:black;
+padding:3px 0;
+border-radius:5px;
+margin-left:33%;
+cursor:pointer;
+}
+input[type=submit]:hover {
+border:1px solid #666;
+background:FloralWhite;
+/*#555;*/
+color:black;
+}*/
+.ui-dialog .ui-dialog-content {
+padding:2em
+}
+/*div.new_post_container {
+width:960px;
+height:610px;
+margin:50px auto;
+font-family:'Droid Serif',serif;
+position:relative
+}
+div.new_post_main {
+width:320px;
+margin-top:35px;
+float:left;
+padding:10px 55px 25px;
+background-color:rgba(204,204,191,0.51);
+border:15px solid #fff;
+box-shadow:0 0 10px;
+border-radius:2px;
+font-size:13px;
+text-align:center
+}*/
